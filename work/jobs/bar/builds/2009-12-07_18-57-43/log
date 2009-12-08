@@ -1,0 +1,29 @@
+Started by user anonymous
+[workspace] $ sh -xe C:\Users\tworker.OVE\AppData\Local\Temp\hudson3718564437224607078.sh
+The system cannot find the file specified
+FATAL: command execution failed
+java.io.IOException: Cannot run program "sh" (in directory "C:\Users\tworker.OVE\workspace\hudson-jukebox-notifier\.\work\jobs\bar\workspace"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:459)
+	at hudson.Proc$LocalProc.<init>(Proc.java:145)
+	at hudson.Proc$LocalProc.<init>(Proc.java:118)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:633)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:268)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:275)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:83)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:58)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:19)
+	at hudson.model.AbstractBuild$AbstractRunner.perform(AbstractBuild.java:480)
+	at hudson.model.Build$RunnerImpl.build(Build.java:158)
+	at hudson.model.Build$RunnerImpl.doRun(Build.java:98)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:354)
+	at hudson.model.Run.run(Run.java:1117)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:93)
+	at hudson.model.Executor.run(Executor.java:122)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:81)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:30)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 16 more
+Finished: FAILURE

@@ -1,0 +1,1 @@
+Install the hpi like any other Hudson plugin, and configure via the gui.
